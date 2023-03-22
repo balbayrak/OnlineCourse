@@ -20,6 +20,8 @@ Api call urls:
 | Api | Address |
 | --- | --- |
 | Get All Course Programs |   http://localhost:5000/courseprogram/all  |
+| Get Course Programs ById |   http://localhost:5000/courseprogram/read/{id}  |
 | Get All Courses | http://localhost:5000/course/all |
+| Get Course ById |   http://localhost:5000/course/read/{id}  |
 
 
