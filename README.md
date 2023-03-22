@@ -14,3 +14,12 @@
 | --- | --- |
 | CourseProgramApi |  http://localhost:3000/swagger/index.html |
 | GatewayApi |    http://localhost:5000|
+
+Api call urls:
+
+| Api | Address |
+| --- | --- |
+| Get All Course Programs |   http://localhost:5000/courseprogram/all  |
+| Get All Courses | http://localhost:5000/course/all |
+
+
