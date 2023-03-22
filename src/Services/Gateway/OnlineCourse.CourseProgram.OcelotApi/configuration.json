@@ -1,0 +1,184 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/CourseProgram/all",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/courseprogram/all",
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamScheme": "http",
+      "FileCacheOptions": {
+        "TtlSeconds": 1800
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/CourseProgram/all?{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/courseprogram/all?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamScheme": "http",
+      "FileCacheOptions": {
+        "TtlSeconds": 1800
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/CourseProgram/read?courseProgramId={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/courseprogram/read/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamScheme": "http",
+      "FileCacheOptions": {
+        "TtlSeconds": 1800
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/CourseProgram/create",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/courseprogram/create",
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamScheme": "http"
+    },
+    {
+      "DownstreamPathTemplate": "/api/CourseProgram/update",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/courseprogram/update",
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamScheme": "http"
+    },
+    {
+      "DownstreamPathTemplate": "/api/CourseProgram/delete?courseProgramId={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/courseprogram/delete/{everything}",
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamScheme": "http"
+    },
+
+
+    {
+      "DownstreamPathTemplate": "/api/Course/all",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/course/all",
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamScheme": "http",
+      "FileCacheOptions": {
+        "TtlSeconds": 1800
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Course/all?{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/course/all?{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamScheme": "http",
+      "FileCacheOptions": {
+        "TtlSeconds": 1800
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Course/read?courseId={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/course/read/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamScheme": "http",
+      "FileCacheOptions": {
+        "TtlSeconds": 1800
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Course/create",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/course/create",
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamScheme": "http"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Course/update",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/course/update",
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamScheme": "http"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Course/delete?courseId={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "onlinecourse.courseprogram.webapi",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/course/delete/{everything}",
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamScheme": "http"
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://onlinecourse.courseprogram.ocelotapi"
+  }
+}
