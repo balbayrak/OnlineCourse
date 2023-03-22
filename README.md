@@ -15,7 +15,7 @@
 | CourseProgramApi |  http://localhost:3000/swagger/index.html |
 | GatewayApi |    http://localhost:5000|
 
-Api call urls:
+Api call example urls:
 
 | Api | Address |
 | --- | --- |
